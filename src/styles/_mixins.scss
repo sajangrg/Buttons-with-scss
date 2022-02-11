@@ -1,0 +1,56 @@
+//Container default width
+@mixin container {
+    max-width: 1336px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// Clearfix
+@mixin clear-fix {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+// Button mixin for default values
+@mixin btn {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 120px;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    color: $white;
+    text-decoration: none;
+}
+
+// Radio mixin for default values
+@mixin radio {
+    display: inline-grid;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    border: 3px solid $primary;
+    background-color: $white;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+// Checkbox mixin for default values
+@mixin checkbox {
+    display: inline-grid;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    border: 3px solid $primary;
+    background-color: $white;
+    border-radius: $border-radius;
+    -webkit-appearance: none;
+    appearance: none;
+}

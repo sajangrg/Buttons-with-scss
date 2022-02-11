@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with SCSS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons-bondle">
+            <div class="buttons-heading">
+                <h1>Button Design</h1>
+            </div>
+            <div class="buttons-group">
+                <a href="#" class="btn btn-primary">Normal</a>
+                <a href="#" class="btn btn-primary pressed">Pressed</a>
+                <a href="#" class="btn btn-primary disabled" disabled>Disabled</a>
+            </div>
+            <div class="buttons-group">
+                <a href="#" class="btn btn-primary btn-outlined">Normal</a>
+                <a href="#" class="btn btn-primary btn-outlined pressed">Pressed</a>
+                <a href="#" class="btn btn-primary btn-outlined disabled" disabled>Disabled</a>
+            </div>
+            <div class="buttons-group">
+                <a href="#" class="btn btn-secondary">Normal</a>
+                <a href="#" class="btn btn-secondary pressed">Pressed</a>
+                <a href="#" class="btn btn-secondary disabled" disabled>Disabled</a>
+            </div>
+            <div class="buttons-group">
+                <a href="#" class="btn btn-secondary btn-outlined">Normal</a>
+                <a href="#" class="btn btn-secondary btn-outlined pressed">Pressed</a>
+                <a href="#" class="btn btn-secondary btn-outlined disabled" disabled>Disabled</a>
+            </div>
+            <div class="arrows-group">
+                <a href="#" class="btn-icon"><i class="fa-solid fa-angle-left"></i></a>
+                <a href="#" class="btn-icon"><i class="fa-solid fa-angle-right"></i></a>
+                <a href="#" class="btn-icon"><i class="fa-solid fa-angle-down"></i></a>
+            </div>
+
+            <div class="radio-group">
+                <div class="styled-radio">
+                    <label for="radio_default_disabled" class="label-radio hide">Disabled</label>
+                    <input type="radio" name="radio_example" class="radio-primary" disabled id="radio_default_disabled">
+                </div>
+
+                <div class="styled-radio">
+                    <label for="radio_default_checked" class="label-radio hide">Checked</label>
+                    <input type="radio" name="radio_example" class="radio-primary" id="radio_default_checked" checked>
+                </div>
+
+                <div class="styled-radio">
+                    <label for="radio_default" class="label-radio hide">Normal</label>
+                    <input type="radio" name="radio_example" class="radio-primary" id="radio_default">
+                </div>
+            </div>
+
+
+            <div class="checkbox-group">
+                <div class="styled-checkbox">
+                    <label for="checkbox_default_disabled" class="label-checkbox hide">Disabled</label>
+                    <input type="checkbox" name="checkbox_example" class="checkbox-primary" disabled id="checkbox_default_disabled">
+                </div>
+
+                <div class="styled-checkbox">
+                    <label for="checkbox_default_checked" class="label-checkbox hide">Checked</label>
+                    <input type="checkbox" name="checkbox_example" class="checkbox-primary" id="checkbox_default_checked" checked>
+                </div>
+
+                <div class="styled-checkbox">
+                    <label for="checkbox_default" class="label-checkbox hide">Normal</label>
+                    <input type="checkbox" name="checkbox_example" class="checkbox-primary" id="checkbox_default">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

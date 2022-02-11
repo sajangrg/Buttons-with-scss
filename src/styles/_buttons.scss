@@ -1,0 +1,170 @@
+// Default button
+.btn {
+    @include btn;
+    &:focus,
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+    }
+}
+
+// Primary button
+.btn-primary {
+    background-color: rgba($primary, $alpha: 0.8);
+    color: $white;
+    &:focus,
+    &:hover,
+    &.pressed {
+        background: $primary;
+        color: $white;
+    }
+    &.btn-outlined {
+        background: $white;
+        color: $primary;
+        border: 2px solid rgba($primary, $alpha: 0.8);
+    }
+}
+
+// Secondary button
+.btn-secondary {
+    background-color: rgba($secondary, $alpha: 0.8);
+    color: $white;
+    &:focus,
+    &:hover,
+    &.pressed {
+        background: $secondary;
+        color: $white;
+    }
+    &.btn-outlined {
+        background: $white;
+        color: $secondary;
+        border: 2px solid rgba($secondary, $alpha: 0.8);
+    }
+}
+
+// Icon blocks
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    color: $primary;
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+// Radio label
+label.label-radio {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 8px 0 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+// Radio default
+input[type="radio"] {
+    @include radio;
+    &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        background: rgba($primary, $alpha: 1);
+        box-shadow: none;
+    }
+    &:checked::before {
+        transform: scale(1);
+    }
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+    }
+}
+
+// Radio Primary
+input[type="checkbox"].checkbox-secondary {
+    border: 3px solid $primary;
+    &::before {
+        border-bottom: 3px solid rgba($primary, $alpha: 1);
+        border-right: 3px solid rgba($primary, $alpha: 1);
+    }
+}
+
+// Radio Secondary
+input[type="checkbox"].checkbox-secondary {
+    border: 3px solid $secondary;
+    &::before {
+        border-bottom: 3px solid rgba($secondary, $alpha: 1);
+        border-right: 3px solid rgba($secondary, $alpha: 1);
+    }
+}
+
+// Checkbox label
+label.label-checkbox {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 8px 0 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+// Checkbox default
+input[type="checkbox"] {
+    @include checkbox;
+    &:before {
+        content: '';
+        width: 6px;
+        height: 11px;
+        margin: -9px 2px;
+        border-bottom: 3px solid rgba($primary, $alpha: 1);
+        border-right: 3px solid rgba($primary, $alpha: 1);
+        transform: rotate(45deg) scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: none;
+    }
+    &:checked::before {
+        transform: rotate(45deg) scale(1);
+    }
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+    }
+}
+
+// Checkbox Primary
+input[type="checkbox"].checkbox-secondary {
+    border: 3px solid $primary;
+    &::before {
+        border-bottom: 3px solid rgba($primary, $alpha: 1);
+        border-right: 3px solid rgba($primary, $alpha: 1);
+    }
+}
+
+// Checkbox Secondary
+input[type="checkbox"].checkbox-secondary {
+    border: 3px solid $secondary;
+    &::before {
+        border-bottom: 3px solid rgba($secondary, $alpha: 1);
+        border-right: 3px solid rgba($secondary, $alpha: 1);
+    }
+}
+
+// Hide Class
+.hide {
+    display: none !important;
+}
